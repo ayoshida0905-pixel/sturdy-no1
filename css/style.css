@@ -389,7 +389,7 @@ section{
 
 .catch__content{
   background-image: linear-gradient(rgba(133, 75, 24, 0.5), rgba(0, 0, 0, 0.308)),  /* 直接オーバーレイ */
-  url("..images/sugar-tint.jpg");
+  url("..images/sugar-tint.jpg/");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
