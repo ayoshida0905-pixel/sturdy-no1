@@ -236,6 +236,7 @@ section{
 .hero{
   position: relative;
   height: 100vh;
+  min-height: 600px;
   overflow: hidden;
   align-items: center;
   display: flex;
@@ -255,7 +256,7 @@ section{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: 50% 90%;
   transition: transform 20s ease-out;
 }
 
@@ -282,7 +283,7 @@ section{
   max-width: clamp(300px, 50vw, 600px);
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(15px);
-  padding: clamp(30px, 5vw, 50px);
+  padding: clamp(10px, 5vw, 30px);
   border-radius: 15px;
   box-shadow: var(--shadow-heavy);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -908,6 +909,11 @@ section{
 
  /* 小さなモバイル */
     @media (max-width: 480px) {
+
+      .hero {
+        height: 85vh;        /* 少し短めにする */
+        min-height: 400px;   /* スマホでは600pxだと大きすぎるので調整 */
+      }
       .color-grid {
         grid-template-columns: 1fr;       /* 単一カラム */
         max-width: 350px;                 /* 幅制限 */
